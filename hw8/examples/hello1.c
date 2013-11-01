@@ -25,6 +25,6 @@ static void __exit hello_exit(void)
 module_init(hello_init);
 module_exit(hello_exit);
 
-MODULE_AUTHOR("Mike McDonald");
+MODULE_AUTHOR("Chris Andrews");
 MODULE_DESCRIPTION("Hello World Example");
 MODULE_LICENSE("GPL");
