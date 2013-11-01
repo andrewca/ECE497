@@ -7,8 +7,8 @@
 #include<unistd.h>
 
 
-#define BOARD_HEIGHT	50
-#define BOARD_WIDTH	50
+#define BOARD_HEIGHT	8
+#define BOARD_WIDTH	8
 
 
 int etchBoard[BOARD_HEIGHT][BOARD_WIDTH] = { {0} };
@@ -99,7 +99,7 @@ void main( void ){
     }
   etchBoard[map.Y][map.X] = 1;
 
-  mvaddch(map.Y, map.X, '1');
+  mvaddch(map.Y, map.X, 'X');
 
 //  printf("%d, %d\n", map.X, map.Y);
   

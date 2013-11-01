@@ -1,6 +1,6 @@
 Kernel Build Sequence
 
-This build sequence uses different compressed object files from that of the book. ie. piggy.xzkern instead of piggy.gz
+This build sequence uses different compressed object files from that of the book. For example, piggy.xzkern instead of piggy.gz
 
 make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- zImage 
 ...

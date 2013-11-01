@@ -40,29 +40,21 @@ void main( void ){
 
   initscr();
 
-// Arrow key scan codes are as follows:
-// 1b 5b XX 
-// ^  3rd byte = 0x41
-// v  3rd byte = 0x42
-// -> 3rd byte = 0x43
-// <- 3rd byte = 0x44
-
   while(1){    
     inKey = getcha();
-    if ( inKey == 0x1b) { // we have a special key
+    if ( inKey == 0x1b) { 
       inKey = getcha();
-      if (inKey == 0x5b){ // it can be an arrow key
+      if (inKey == 0x5b){ 
 	inKey = getcha();
       }
-    } else { // handle normal key
-	//printf("%x", inKey);	
+    } else { 
 	if (inKey == 'c'){
 	  erase();
 	}
 
     }
     
-   // Up-Arrow handling
+   // Up-Arrow 
     if ( inKey == 0x41 ){
       if (map.Y > 0 ){
         map.Y -= 1;
@@ -71,7 +63,7 @@ void main( void ){
       }
     }
 
-   // Down-Arrow handling
+   // Down-Arrow
     if ( inKey == 0x42 ){
       if (map.Y < (BOARD_HEIGHT-1) ){
         map.Y += 1;
@@ -80,7 +72,7 @@ void main( void ){
       }
     }
 
-   // Right-Arrow handling
+   // Right-Arrow 
     if ( inKey == 0x43 ){
       if (map.X < (BOARD_WIDTH-1) ){
         map.X += 1;
@@ -89,7 +81,7 @@ void main( void ){
       }
     }
 
-   // Left-Arrow handling
+   // Left-Arrow 
     if ( inKey == 0x44 ){
       if (map.X > 0 ){
         map.X -= 1;
@@ -101,8 +93,6 @@ void main( void ){
 
   mvaddch(map.Y, map.X, '1');
 
-//  printf("%d, %d\n", map.X, map.Y);
-  
   refresh();
 
   }

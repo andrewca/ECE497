@@ -1,6 +1,6 @@
 From b11df03a61333e19dd808963edb02e213996c5fb Mon Sep 17 00:00:00 2001
-From: Michael McDonald <mcdonamp@rose-hulman.edu>
-Date: Tue, 22 Oct 2013 22:30:14 -0400
+From: Chris Andrews <andrewca@rose-hulman.edu>
+Date: Mon, 21 Oct 2013 20:23:17 -0400
 Subject: [PATCH 1/4] Adding necessary files for a minimal kernel module.
 
 ---
@@ -76,8 +76,8 @@ index 0000000..ef3009c
 
 
 From 448e2d6c86933a17cb90ac14d2c728c0c1acfa8d Mon Sep 17 00:00:00 2001
-From: Michael McDonald <mcdonamp@rose-hulman.edu>
-Date: Tue, 22 Oct 2013 22:55:57 -0400
+From: Chris Andrews <andrewca@rose-hulman.edu>
+Date: Mon, 21 Oct 2013 20:23:17 -0400
 Subject: [PATCH 2/4] Got rid of an extraneous plus sign.
 
 ---
@@ -102,8 +102,8 @@ index 57ebd20..917aa65 100644
 
 
 From d0b747c0fa655e4d7ed7da4f6c60d65c1d543be9 Mon Sep 17 00:00:00 2001
-From: Michael McDonald <mcdonamp@rose-hulman.edu>
-Date: Tue, 22 Oct 2013 23:02:09 -0400
+From: Chris Andrews <andrewca@rose-hulman.edu>
+Date: Mon, 21 Oct 2013 20:23:17 -0400
 Subject: [PATCH 3/4] fixed broken quotation marks
 
 ---
@@ -143,8 +143,8 @@ index ef3009c..2e554c3 100644
 
 
 From bee94b8a10933d195a79eb6aa5753abb44a9d992 Mon Sep 17 00:00:00 2001
-From: Michael McDonald <mcdonamp@rose-hulman.edu>
-Date: Tue, 22 Oct 2013 23:25:41 -0400
+From: Chris Andrews <andrewca@rose-hulman.edu>
+Date: Mon, 21 Oct 2013 20:23:17 -0400
 Subject: [PATCH 4/4] Modified to take two parameters, debug_enable and
  debug_level
 
