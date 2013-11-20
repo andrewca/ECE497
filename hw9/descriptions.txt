@@ -1,0 +1,1 @@
+When the user toggles lights via the interface, the onlcik handler both displays the change and sets the matrix via the "i2cset" socket signal. A css class called ".on" provieds the coloring to elements that are on in the matrix displays of clients.  The messages now incude data for the red light.
